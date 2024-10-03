@@ -1,0 +1,45 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #d9534f;
+}
+
+.navbar {
+    background-color: #d9534f;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.carousel-item img {
+    height: 400px;
+}
+
+.footer {
+    background-color: #d9534f;
+    color: white;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
