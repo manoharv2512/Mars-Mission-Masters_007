@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+.time-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.time-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.time-btn.active {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+}
+
+.screen {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.seating-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.row-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.seats-row {
+    display: flex;
+    gap: 10px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #00bfa5;
+    color: white;
+}
+
+.seat.sold {
+    background-color: #ffcc00;
+    cursor: not-allowed;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.legend div {
+    display: flex;
+    align-items: center;
+}
+
+.legend-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.legend-icon.available {
+    background-color: white;
+    border: 2px solid #ccc;
+}
+
+.legend-icon.selected {
+    background-color: #00bfa5;
+    border: 2px solid #00bfa5;
+}
+
+.legend-icon.sold {
+    background-color: #ffcc00;
+    border: 2px solid #ffcc00;
+}
+
+.summary {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.summary p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}

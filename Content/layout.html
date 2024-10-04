@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="/CSS/layout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Stree 2: Sarkate Ka Aatank</h2>
+      <p>Ajay Devgn's NY Cinemas: Elan Epic Mall | Today, 03 Oct, 11:00 PM</p>
+
+      <div class="time-selection">
+        <button class="time-btn">05:15 PM LASER DOLBY ATMOS</button>
+        <button class="time-btn active">11:00 PM LASER DOLBY ATMOS</button>
+      </div>
+
+      <div class="screen">Screen</div>
+
+      <!-- Seat Layout -->
+      <div class="seating-layout">
+        <div class="section">
+          <div class="row-title">Rs. 350 RECLINER</div>
+          <div class="seats-row" id="recliner-row">
+            <button class="seat" data-price="350">A1</button>
+            <button class="seat" data-price="350">A2</button>
+            <button class="seat" data-price="350">A3</button>
+            <button class="seat" data-price="350">A4</button>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="row-title">Rs. 220 PRIME</div>
+          <div class="seats-row" id="prime-row">
+            <button class="seat" data-price="220">B1</button>
+            <button class="seat" data-price="220">B2</button>
+            <button class="seat" data-price="220">B3</button>
+            <button class="seat sold" data-price="220">B4</button>
+            <button class="seat" data-price="220">B5</button>
+            <button class="seat" data-price="220">B6</button>
+          </div>
+          <!-- Add more rows for Prime as needed -->
+        </div>
+
+        <div class="section">
+          <div class="row-title">Rs. 200 CLASSIC</div>
+          <div class="seats-row" id="classic-row">
+            <button class="seat" data-price="200">H4</button>
+            <button class="seat" data-price="200">H5</button>
+            <button class="seat" data-price="200">H6</button>
+            <button class="seat" data-price="200">I4</button>
+            <button class="seat" data-price="200">I5</button>
+            <button class="seat" data-price="200">I6</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="legend">
+        <div><span class="legend-icon available"></span> Available</div>
+        <div><span class="legend-icon selected"></span> Selected</div>
+        <div><span class="legend-icon sold"></span> Sold</div>
+      </div>
+
+      <div class="summary">
+        <p>Selected Seats: <span id="selected-seats">0</span></p>
+        <p>Total Price: Rs. <span id="total-price">0</span></p>
+      </div>
+    </div>
+
+    <script src="/JS/layout.js"></script>
+  </body>
+</html>

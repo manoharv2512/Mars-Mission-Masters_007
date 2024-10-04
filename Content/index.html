@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMyShow Clone</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header class="text-center py-4">
+        <h1>PopCorn .Ticket</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">PopCorn .ticket</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Stream</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Plays</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Activities</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/Images/1727710500223_lollapaloozaindia2025web.avif"
+              class="d-block w-100"
+              alt="First slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Your next credit card gets you 24 free* tickets!</h5>
+              <a href="#" class="btn btn-danger">Apply Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/Images/1727712698948_peppapiglivepromotionalbannerswebshowcase.avif"
+              class="d-block w-100"
+              alt="Second slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Your next credit card gets you 24 free* tickets!</h5>
+              <a href="#" class="btn btn-danger">Apply Now</a>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <h2 class="text-center">Recommended Movies</h2>
+      <div class="row" id="movies-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMoreMovies" class="btn btn-danger">Load More</button>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <h2 class="text-center my-4">Premier</h2>
+      <div class="row" id="premier-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMorePremier" class="btn btn-danger">Load More</button>
+      </div>
+
+      <h2 class="text-center my-4">Music Studio</h2>
+      <div class="row" id="music-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMoreMusic" class="btn btn-danger">Load More</button>
+      </div>
+
+      <h2 class="text-center my-4">Outdoor</h2>
+      <div class="row" id="outdoor-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMoreOutdoor" class="btn btn-danger">Load More</button>
+      </div>
+
+      <h2 class="text-center my-4">Laughter</h2>
+      <div class="row" id="laughter-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMoreLaughter" class="btn btn-danger">Load More</button>
+      </div>
+
+      <h2 class="text-center my-4">Popular</h2>
+      <div class="row" id="popular-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMorePopular" class="btn btn-danger">Load More</button>
+      </div>
+
+      <h2 class="text-center my-4">Latest Plays</h2>
+      <div class="row" id="plays-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMorePlays" class="btn btn-danger">Load More</button>
+      </div>
+
+      <h2 class="text-center my-4">Top Games and Sports Events</h2>
+      <div class="row" id="sports-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMoreSports" class="btn btn-danger">Load More</button>
+      </div>
+
+      <h2 class="text-center my-4">Fun Activities</h2>
+      <div class="row" id="activities-container"></div>
+      <div class="text-center my-3">
+        <button id="loadMoreActivities" class="btn btn-danger">
+          Load More
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+              We provide the latest recommendations for movies, music, and
+              entertainment. Discover new favorites and stay updated with
+              trending content.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>Email: info@entertainmenthub.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p>&copy; 2024 Entertainment Hub. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/JS/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
