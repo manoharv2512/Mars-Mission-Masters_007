@@ -48,6 +48,9 @@ function displayMovieDetails(details) {
             <p class="plot"><b>Plot:</b> ${details.Plot}</p>
             <p class="language"><b>Language:</b> ${details.Language}</p>
             <p class="awards"><b><i class="fas fa-award"></i></b> ${details.Awards}</p>
+            <button id="nextstep"><a href="/HTML/layout.html">Book Show</a></button>
         </div>
     `;
 }
+
+
