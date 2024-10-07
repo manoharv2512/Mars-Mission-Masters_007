@@ -93,7 +93,7 @@
         let AllMovies = JSON.parse(localStorage.getItem("AllMovies")); // Parsing stored data
         let currentMovie = AllMovies[index]; // Get the specific movie by index
         localStorage.setItem("currentMovie", JSON.stringify(currentMovie)); // Store current movie
-        window.location.href = "movie-detail.html"; // Redirect to movie detail page
+        window.location.href = "/HTML/movie-detail.html"; // Redirect to movie detail page
       }
 
       // Fetch and render popular movies
