@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMyShow Clone</title>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/IMAGES/d23044c5-076e-47fa-8938-2f17144aa06c.jpeg"
+            alt="Logo"
+          />
+          <img
+            src="/IMAGES/signature.png"
+            id="signature"
+            alt="PopCorn .Ticket"
+          />
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Stream</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Plays</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Activities</a></li>
+          <li class="nav-item">
+            <a href="/HTML/login.html" class="btn-light">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/IMAGES/section-movies-carousel-flex-header-output-1024x288.jpg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/IMAGES/slider-with-background-v0-m5i469bdbx8b1.webp"
+            alt="Second slide"
+          />
+        </div>
+      </div>
+      <span class="carousel-control-prev">&lt;</span>
+      <span class="carousel-control-next">&gt;</span>
+    </div>
+
+    <div class="container">
+      <h2>Recommended Movies</h2>
+      <div class="row" id="movies-container"></div>
+      <!-- <div class="text-center my-4">
+        <button id="loadMoreMovies" class="btn-custom">Load More</button>
+      </div> -->
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+              We provide the latest recommendations for movies, music, and
+              entertainment.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>Email: info@entertainmenthub.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <p>&copy; 2024 Entertainment Hub. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="/JS/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

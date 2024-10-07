@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipt</title>
+    <link rel="stylesheet" href="/CSS/receipt.css" />
+  </head>
+  <body>
+    <div class="receipt-header">
+      <h1>Payment Receipt</h1>
+      <p>Thank you for your payment!</p>
+    </div>
+    <div class="receipt-details">
+      <h2>Receipt Details</h2>
+      <p>
+        <strong>Confirmation Number:</strong>
+        <span id="confirmation-number"></span>
+      </p>
+      <p>
+        <strong>Transaction Date:</strong> <span id="transaction-date"></span>
+      </p>
+      <p><strong>Amount Paid:</strong> <span id="amount-paid"></span></p>
+    </div>
+
+    <!-- Print Button -->
+    <button onclick="printReceipt()" class="print-button">Print Receipt</button>
+
+    <!-- Back to homepage button -->
+    <a href="index.html" class="back-button">Back to PoPcorn Ticket</a>
+    <!-- Change 'index.html' to your homepage URL -->
+
+    <script>
+      // Function to get query parameters
+      const getQueryParams = () => {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          confirmationNumber: params.get("confirmationNumber") || "N/A",
+          transactionDate: params.get("transactionDate") || "N/A",
+          amountPaid: params.get("amountPaid") || "N/A",
+        };
+      };
+
+      // Get the data from the URL
+      const { confirmationNumber, transactionDate, amountPaid } =
+        getQueryParams();
+
+      // Populate the receipt details
+      document.getElementById("confirmation-number").textContent =
+        confirmationNumber;
+      document.getElementById("transaction-date").textContent = transactionDate;
+      document.getElementById("amount-paid").textContent = amountPaid;
+
+      // Print function
+      function printReceipt() {
+        window.print();
+      }
+    </script>
+  </body>
+</html>

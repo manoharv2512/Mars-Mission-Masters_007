@@ -1,0 +1,150 @@
+/* Seat Button Styles */
+
+body{
+    text-align: center;
+    background:linear-gradient(black , rgb(132, 5, 5));
+    margin-bottom: 50px;
+}
+.container #movieName{
+    color: #e1d6d7;
+    font-size: 40px;
+    /* background-color: #2980b9; */
+    text-align: center;
+}
+
+.container p{
+    font-size: 20px;
+    color: white;
+}
+.container .time-selection{
+    
+
+}
+
+.container .time-selection .time-btn{
+    margin-left: 40px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(143, 6, 6);
+    color: white;
+    font-weight: 600;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.seats-row{
+    /* background-color: #2980b9; */
+   
+}
+
+.row-title{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.seat {
+    background-color: gold; /* Highlight the best seat */
+  color: white;
+  font-weight: bold;
+  border: 2px solid darkgoldenrod; /* Create a solid border */
+  border-radius: 8px; /* Rounded corners for better appearance */
+  padding: 12px 20px; /* Add some padding to make it feel premium */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Give it a shadow for a raised effect */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seat:hover {
+    transform: scale(1.05); /* Slightly enlarge when hovered */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow depth */
+}
+
+.seat.selected {
+    background-color: #2ecc71; /* Soft green for selected state */
+    border-color: #27ae60; /* Border matches the green tone */
+}
+
+.seat:disabled {
+    background-color: #bdc3c7; /* Softer gray for disabled seats */
+    color: #7f8c8d; /* Muted color for text on disabled seats */
+    cursor: not-allowed;
+    opacity: 0.7; /* Slightly transparent */
+}
+
+
+
+.summary {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Booking Summary Section */
+.booking-summary {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for elegance */
+    font-size: 16px;
+    color: black; /* Darker text color for readability */
+    max-width: 100%; /* Ensuring the summary is responsive */
+    box-sizing: border-box;
+}
+
+/* Book Now Button */
+#book-now {
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50px; /* Pill-shaped button for a modern feel */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for the button */
+}
+
+#book-now:hover {
+    background-color: #2980b9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.container {
+    color: white;
+}
+
+.container #imp p{
+    color: white;
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .seat {
+        width: 40px;
+        height: 40px;
+        font-size: 14px; /* Smaller seat buttons for smaller screens */
+    }
+
+    #book-now {
+        width: 100%; /* Full width on smaller screens */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .seat {
+        width: 35px;
+        height: 35px;
+        font-size: 12px; /* Further adjustment for very small screens */
+    }
+
+    .booking-summary {
+        font-size: 14px; /* Adjusting font size for mobile readability */
+        padding: 15px;
+    }
+}

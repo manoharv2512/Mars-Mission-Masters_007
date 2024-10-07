@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: large;
+    margin: 10px 0;
+}
+
+.summary {
+    background-color: #353432;
+    color: #eee;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.summary h2 {
+    margin: 5px 0;
+}
+
+#selected-seats, #total-price {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.food-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.food-item {
+    background-color: #EEEEE6;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;  /* Fixed width for each box */
+    height: 250px; /* Fixed height for each box */
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+.food-item img {
+    width: 150px;  /* Fixed width for the image */
+    height: 150px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image fits within the defined area */
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+.food-item span {
+    display: block;
+    font-size: medium;
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+button {
+    background-color: #E8BC0E;
+    color: #353432;
+    border: none;
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d4a500;
+}
+
+@media only screen and (max-width: 992px) {
+    .food-menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .food-menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .food-menu {
+        grid-template-columns: 1fr;
+    }
+}
