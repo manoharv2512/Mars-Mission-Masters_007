@@ -16,7 +16,7 @@ if (storeMovie && storeMovie.imdbID) {
 
 async function fetchMovieDetails(imdbID) {
     try {
-        const URL = `http://www.omdbapi.com/?i=${imdbID}&apikey=608f9a10`; // Fetch movie by imdbID
+        const URL = `https://www.omdbapi.com/?i=${imdbID}&apikey=608f9a10`; // Fetch movie by imdbID
         const res = await fetch(URL);
         const movieDetails = await res.json();
         
