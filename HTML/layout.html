@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="/CSS/layout.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="movieName"></h2>
+        <p>Ajay Devgn's NY Cinemas: Elan Epic Mall | Today, 03 Oct, 11:00 PM</p>
+
+        <div class="time-selection">
+            <button class="time-btn">05:15 PM LASER DOLBY ATMOS</button>
+            <button class="time-btn active">11:00 PM LASER DOLBY ATMOS</button>
+        </div>
+
+        <div class="screen">Screen</div>
+
+        <!-- Seat Layout -->
+        <div class="seating-layout">
+            <div class="section">
+                <div class="row-title">Rs. 350 RECLINER</div>
+                <div class="seats-row" id="recliner-row">
+                    <button class="seat" data-price="350">A1</button>
+                    <button class="seat" data-price="350">A2</button>
+                    <button class="seat" data-price="350">A3</button>
+                    <button class="seat" data-price="350">A4</button>
+                    <button class="seat" data-price="350">A5</button>
+                    <button class="seat" data-price="350">A6</button>
+                    <button class="seat" data-price="350">A7</button>
+                    <button class="seat" data-price="350">A8</button>
+                    <button class="seat" data-price="350">A9</button>
+                    <button class="seat" data-price="350">A10</button>
+                    <button class="seat" data-price="350">A11</button>
+                    <button class="seat" data-price="350">A12</button>
+                    <button class="seat" data-price="350">A13</button>
+                    <button class="seat" data-price="350">A14</button>
+                    <button class="seat" data-price="350">A15</button>
+                    
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="row-title">Rs. 220 PRIME</div>
+                <div class="seats-row" id="prime-row">
+                    <button class="seat" data-price="220">B1</button>
+                    <button class="seat" data-price="220">B2</button>
+                    <button class="seat" data-price="220">B3</button>
+                    <button class="seat" data-price="220">B4</button>
+                    <button class="seat" data-price="220">B5</button>
+                    <button class="seat" data-price="220">B6</button>
+                    <button class="seat" data-price="220">B7</button>
+                    <button class="seat" data-price="220">B8</button>
+                    <button class="seat" data-price="220">B9</button>
+                    <button class="seat" data-price="220">B10</button>
+                    <button class="seat" data-price="220">B11</button>
+                    <button class="seat" data-price="220">B12</button>
+                    <button class="seat" data-price="220">B13</button>
+                    <button class="seat" data-price="220">B14</button>
+                    <button class="seat" data-price="220">B15</button>
+                    <button class="seat" data-price="220">B16</button>
+                    <button class="seat" data-price="220">B17</button>
+                    <button class="seat" data-price="220">B18</button>
+                    <button class="seat" data-price="220">B19</button>
+                    <button class="seat" data-price="220">B20</button>
+                    <button class="seat" data-price="220">B21</button>
+                    <button class="seat" data-price="220">B22</button>
+                    <button class="seat" data-price="220">C1</button>
+                    <button class="seat" data-price="220">C2</button>
+                    <button class="seat" data-price="220">C3</button>
+                    <button class="seat" data-price="220">C4</button>
+                    <button class="seat" data-price="220">C5</button>
+                    <button class="seat" data-price="220">C6</button>
+                    <button class="seat" data-price="220">C7</button>
+                    <button class="seat" data-price="220">C8</button>
+                    <button class="seat" data-price="220">C9</button>
+                    <button class="seat" data-price="220">C10</button>
+                    <button class="seat" data-price="220">C11</button>
+                    <button class="seat" data-price="220">C12</button>
+                    <button class="seat" data-price="220">C13</button>
+                    <button class="seat" data-price="220">C14</button>
+                    <button class="seat" data-price="220">C15</button>
+                    <button class="seat" data-price="220">C16</button>
+                    <button class="seat" data-price="220">C17</button>
+                    <button class="seat" data-price="220">C18</button>
+                    <button class="seat" data-price="220">C19</button>
+                    <button class="seat" data-price="220">C20</button>
+                    <button class="seat" data-price="220">C21</button>
+                    <button class="seat" data-price="220">C22</button>
+                    <button class="seat" data-price="220">D1</button>
+                    <button class="seat" data-price="220">D2</button>
+                    <button class="seat" data-price="220">D3</button>
+                    <button class="seat" data-price="220">D4</button>
+                    <button class="seat" data-price="220">D5</button>
+                    <button class="seat" data-price="220">D6</button>
+                    <button class="seat" data-price="220">D7</button>
+                    <button class="seat" data-price="220">D8</button>
+                    <button class="seat" data-price="220">D9</button>
+                    <button class="seat" data-price="220">D10</button>
+                    <button class="seat" data-price="220">D11</button>
+                    <button class="seat" data-price="220">D12</button>
+                    <button class="seat" data-price="220">D13</button>
+                    <button class="seat" data-price="220">D14</button>
+                    <button class="seat" data-price="220">D15</button>
+                    <button class="seat" data-price="220">D16</button>
+                    <button class="seat" data-price="220">D17</button>
+                    <button class="seat" data-price="220">D18</button>
+                    <button class="seat" data-price="220">D19</button>
+                    <button class="seat" data-price="220">D20</button>
+                    <button class="seat" data-price="220">D21</button>
+                    <button class="seat" data-price="220">D22</button>
+                    <button class="seat" data-price="220">E1</button>
+                    <button class="seat" data-price="220">E2</button>
+                    <button class="seat" data-price="220">E3</button>
+                    <button class="seat" data-price="220">E4</button>
+                    <button class="seat" data-price="220">E5</button>
+                    <button class="seat" data-price="220">E6</button>
+                    <button class="seat" data-price="220">E7</button>
+                    <button class="seat" data-price="220">E8</button>
+                    <button class="seat" data-price="220">E9</button>
+                    <button class="seat" data-price="220">E10</button>
+                    <button class="seat" data-price="220">E11</button>
+                    <button class="seat" data-price="220">E12</button>
+                    <button class="seat" data-price="220">E13</button>
+                    <button class="seat" data-price="220">E14</button>
+                    <button class="seat" data-price="220">E15</button>
+                    <button class="seat" data-price="220">E16</button>
+                    <button class="seat" data-price="220">E17</button>
+                    <button class="seat" data-price="220">E18</button>
+                    <button class="seat" data-price="220">E19</button>
+                    <button class="seat" data-price="220">E20</button>
+                    <button class="seat" data-price="220">E21</button>
+                    <button class="seat" data-price="220">E22</button>
+                    <button class="seat" data-price="220">F1</button>
+                    <button class="seat" data-price="220">F2</button>
+                    <button class="seat" data-price="220">F3</button>
+                    <button class="seat" data-price="220">F4</button>
+                    <button class="seat" data-price="220">F5</button>
+                    <button class="seat" data-price="220">F6</button>
+                    <button class="seat" data-price="220">F7</button>
+                    <button class="seat" data-price="220">F8</button>
+                    <button class="seat" data-price="220">F9</button>
+                    <button class="seat" data-price="220">F10</button>
+                    <button class="seat" data-price="220">F11</button>
+                    <button class="seat" data-price="220">F12</button>
+                    <button class="seat" data-price="220">F13</button>
+                    <button class="seat" data-price="220">F14</button>
+                    <button class="seat" data-price="220">F15</button>
+                    <button class="seat" data-price="220">F16</button>
+                    <button class="seat" data-price="220">F17</button>
+                    <button class="seat" data-price="220">F18</button>
+                    <button class="seat" data-price="220">F19</button>
+                    <button class="seat" data-price="220">F20</button>
+                    <button class="seat" data-price="220">F21</button>
+                    <button class="seat" data-price="220">F22</button>
+                    <button class="seat" data-price="220">G1</button>
+                    <button class="seat" data-price="220">G2</button>
+                    <button class="seat" data-price="220">G3</button>
+                    <button class="seat" data-price="220">G4</button>
+                    <button class="seat" data-price="220">G5</button>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="row-title">Rs. 150 CLASSIC</div>
+                <div class="seats-row" id="classic-row">
+                    <button class="seat" data-price="150">H1</button>
+                    <button class="seat" data-price="150">H2</button>
+                    <button class="seat" data-price="150">H3</button>
+                    <button class="seat" data-price="150">H4</button>
+                    <button class="seat" data-price="150">H5</button>
+                    <button class="seat" data-price="150">H6</button>
+                    <button class="seat" data-price="150">H7</button>
+                    <button class="seat" data-price="150">H8</button>
+                    <button class="seat" data-price="150">H9</button>
+                    <button class="seat" data-price="150">H10</button>
+                    <button class="seat" data-price="150">H11</button>
+                    <button class="seat" data-price="150">H12</button>
+                    <button class="seat" data-price="150">H13</button>
+                    <button class="seat" data-price="150">H14</button>
+                    <button class="seat" data-price="150">H15</button>
+                    <button class="seat" data-price="150">H16</button>
+                    <button class="seat" data-price="150">H17</button>
+                    <button class="seat" data-price="150">H18</button>
+                    <button class="seat" data-price="150">H19</button>
+                    <button class="seat" data-price="150">H20</button>
+                    <button class="seat" data-price="150">H21</button>
+                    <button class="seat" data-price="150">H22</button>
+                    <button class="seat" data-price="150">I1</button>
+                    <button class="seat" data-price="150">I2</button>
+                    <button class="seat" data-price="150">I3</button>
+                    <button class="seat" data-price="150">I4</button>
+                    <button class="seat" data-price="150">I5</button>
+                    <button class="seat" data-price="150">I6</button>
+                    <button class="seat" data-price="150">I7</button>
+                    <button class="seat" data-price="150">I8</button>
+                    <button class="seat" data-price="150">I9</button>
+                    <button class="seat" data-price="150">I10</button>
+                    <button class="seat" data-price="150">I11</button>
+                    <button class="seat" data-price="150">I12</button>
+                    <button class="seat" data-price="150">I13</button>
+                    <button class="seat" data-price="150">I14</button>
+                    <button class="seat" data-price="150">I15</button>
+                    <button class="seat" data-price="150">I16</button>
+                    <button class="seat" data-price="150">I17</button>
+                    <button class="seat" data-price="150">I18</button>
+                    <button class="seat" data-price="150">I19</button>
+                    <button class="seat" data-price="150">I20</button>
+                    <button class="seat" data-price="150">I21</button>
+                    <button class="seat" data-price="150">I22</button>
+                    <button class="seat" data-price="150">J1</button>
+                    <button class="seat" data-price="150">J2</button>
+                    <button class="seat" data-price="150">J3</button>
+                    <button class="seat" data-price="150">J4</button>
+                    <button class="seat" data-price="150">J5</button>
+                    <button class="seat" data-price="150">J6</button>
+                    <button class="seat" data-price="150">J7</button>
+                    <button class="seat" data-price="150">J8</button>
+                    <button class="seat" data-price="150">J9</button>
+                    <button class="seat" data-price="150">J10</button>
+                    <button class="seat" data-price="150">J11</button>
+                    <button class="seat" data-price="150">J12</button>
+                    <button class="seat" data-price="150">J13</button>
+                    <button class="seat" data-price="150">J14</button>
+                    <button class="seat" data-price="150">J15</button>
+                    <button class="seat" data-price="150">J16</button>
+                    <button class="seat" data-price="150">J17</button>
+                    <button class="seat" data-price="150">J18</button>
+                    <button class="seat" data-price="150">J19</button>
+                    <button class="seat" data-price="150">J20</button>
+                    <button class="seat" data-price="150">J21</button>
+                    <button class="seat" data-price="150">J22</button>
+                </div>
+            </div>
+        </div>
+        <!-- highlight functionality html - seat occupied or not -->
+        <!-- <div class="legend"></div>
+            <div><span class="legend-icon available"></span> Available</div>
+            <div><span class="legend-icon selected"></span> Selected</div>
+            <div><span class="legend-icon sold"></span> Sold</div>
+        </div> -->
+
+        <div class="summary" id="imp">
+            <p>Selected Seats: <span id="selected-seats">0</span></p>
+            <p>Total Price: Rs. <span id="total-price">0</span></p>
+        </div>
+    </div>
+
+        <div class="booking-summary">
+            <h2>Booking Summary</h2>
+            <div id="summary"></div>
+            <button id="book-now">Book Now</button>
+        </div>
+    </div>
+
+   
+    <script src="/JS/layout.js"></script>
+</body>
+</html>

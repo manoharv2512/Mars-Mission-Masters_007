@@ -1,0 +1,150 @@
+/* General Styles for the Payment Section */
+body{
+    background: linear-gradient(black, rgb(133, 3, 3));
+    height: 100vh;
+}
+.payment-section {
+    /* background-color: #000; Black background */
+    color: #fff; /* White text */
+    padding: 40px 0;
+    margin-top: 10%;
+
+  }
+  
+.payment-wrapper {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 40px;
+}
+  
+  .payment-left, .payment-right {
+    /* background-color: #1a1a1a; Dark gray container for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Slight shadow for elevation */
+    width: 48%;
+  }
+
+  .payement-wrapper .payment-left{
+    border-color: #fff;
+    background-color: aqua;
+  }
+  
+  .payment-header-title {
+    font-size: 24px;
+    /* color: #e50914; Red theme accent for the title */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .payment-header-description {
+    font-size: 14px;
+    color: #ddd; /* Slightly faded white */
+  }
+  
+  .payment-summary {
+    margin-top: 20px;
+  }
+  
+  .payment-summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid #444; /* Subtle border for separation */
+  }
+  
+  .payment-summary-price {
+    color: #e50914; /* Red color for price */
+    font-weight: bold;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-title {
+    font-size: 24px;
+    color: #e50914; /* Red accent for the title */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .payment-form-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .payment-form-group-flex {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .payment-form-control {
+    background-color: transparent;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 12px 10px;
+    font-size: 16px;
+    width: 100%;
+    color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .payment-form-control:focus {
+    outline: none;
+    border-color: #e50914; /* Red border when focused */
+  }
+  
+  .payment-form-label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #999;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .payment-form-control:focus + .payment-form-label,
+  .payment-form-control:not(:placeholder-shown) + .payment-form-label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #e50914; /* Label turns red when focused or filled */
+  }
+  
+  .payment-form-submit-button {
+    background-color: #e50914; /* Red button */
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-form-submit-button:hover {
+    background-color: #ff3333; /* Lighter red on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .payment-wrapper {
+      flex-direction: column;
+    }
+  
+    .payment-left, .payment-right {
+      width: 100%;
+    }
+  
+    .payment-form-group-flex {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  
