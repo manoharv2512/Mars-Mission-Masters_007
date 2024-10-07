@@ -11,7 +11,7 @@ Frontend: https://popcorn-ticket007.netlify.app/
 
 ## Directory Structure
 
-bookmyshow-clone/
+PopCorn . Ticket/
 │
 ├── assets/
 │   ├── css/
@@ -32,6 +32,7 @@ bookmyshow-clone/
 │   └── (other pages like bookings, user profile, etc.)
 │
 └── README.md
+
 
 
 ## Video Walkthrough of the project
