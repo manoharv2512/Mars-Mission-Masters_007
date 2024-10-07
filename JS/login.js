@@ -11,11 +11,7 @@
 
             // Static login options
             var validCredentials = [
-                { email: "admin@gmail.com", password: "admin" },
-                { email: "shivam@gmail.com", password: "shivam" },
-                { email: "manoj@gmail.com", password: "manoj" },
-                { email: "vaibhav@gmail.com", password: "vaibhav" },
-                { email: "shubham@gmail.com", password: "shubham" }
+                { email: "admin@gmail.com", password: "admin" }
             ];
 
             // Check if the entered credentials match any of the valid credentials
@@ -26,7 +22,7 @@
             if (isValid) {
                 alertSuccess.style.display = 'block';
                 setTimeout(function () {
-                    window.location.href = 'index.html'; // Redirect to your dashboard page
+                    window.location.href = '../index.html'; // Redirect to your dashboard page
                 }, 2000);
             } else {
                 alertError.style.display = 'block';
