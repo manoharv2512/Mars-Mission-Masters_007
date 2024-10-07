@@ -83,6 +83,10 @@ https://www.youtube.com/watch?v=Hxq9C7OfwgA
 - Feature 2:-The website shows the total price of addon items and ticket items together in payment
 - Feature 3:-it also gives the receipt to the user with generating random number and the current date and time
 
+  ## Upcoming Features
+
+- AI chatBots :- For given the user experience. 
+
 ## design decisions or assumptions
 So for the designing part we used the linear gradient of dark red which is a mixture of red and black, and focused on responsiveness
 
