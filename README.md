@@ -1,4 +1,4 @@
-# Project Title
+# PopCorn . Ticket
 
 ## Introduction
 We have created Popcorn Ticket app which is Kind off a clone a BOOKMYSHOW website. The basic purpose of this website is that the user can book there tickets accordingly.
