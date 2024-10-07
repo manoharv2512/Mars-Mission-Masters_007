@@ -11,25 +11,43 @@ Frontend: https://popcorn-ticket007.netlify.app/
 
 ## Directory Structure
 
-PopCorn . Ticket/
+PopCorn.Ticket/
 │
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   ├── images/
-│   │   └── (all image files like movie posters, logos, etc.)
-│   └── js/
-│       ├── main.js
-│       ├── movieDetail.js
-│       └── (other JavaScript files for different functionalities)
+├── CSS/
+│   ├── about.css
+│   ├── addon.css
+│   ├── index.css
+│   ├── layout.css
+│   ├── login.css
+│   ├── movie-detail.css
+│   ├── payment.css
+│   ├── receipt.css
+│   ├── style.css
+│   └── tailwindcss-colors.css
 │
-├── components/
-│   └── (reusable HTML components like header, footer, movie card templates)
+├── HTML/
+│   ├── about.html
+│   ├── addon.html
+│   ├── layout.html
+│   ├── login.html
+│   ├── movie-detail.html
+│   ├── payment.html
+│   ├── receipt.html
+│   └── signup.html
 │
-├── pages/
-│   ├── index.html
-│   ├── movieDetail.html
-│   └── (other pages like bookings, user profile, etc.)
+├── Images/
+│   └── (all image files here)
+│
+├── JS/
+│   ├── addon.js
+│   ├── index.js
+│   ├── layout.js
+│   ├── login.js
+│   ├── movie-detail.js
+│   ├── payment.js
+│   └── validation.js
+│
+├── index.html
 │
 └── README.md
 
@@ -38,7 +56,25 @@ PopCorn . Ticket/
 ## Video Walkthrough of the project
 https://www.youtube.com/watch?v=Hxq9C7OfwgA
 
-## Video Walkthrough of the codebase
+## Snaps
+
+![image](https://github.com/user-attachments/assets/d0d2cb7a-5d00-40e1-8e5a-8c7a88f03855)
+
+![image](https://github.com/user-attachments/assets/2b358ad2-feae-4208-874b-440424448058)
+
+![image](https://github.com/user-attachments/assets/d1e0b01e-286e-49fc-96bd-9310f9dbe606)
+
+![image](https://github.com/user-attachments/assets/cd77b351-ae2e-4ec4-b8ea-000b8217f7d2)
+
+![image](https://github.com/user-attachments/assets/7d8d6d0f-1d2e-44c3-b7c3-d838fba22caf)
+
+![image](https://github.com/user-attachments/assets/95f75361-e655-4ef9-a057-72206596d4e4)
+
+![image](https://github.com/user-attachments/assets/13024456-72b9-4cb9-bbce-b6e3ac2f0b0f)
+
+![image](https://github.com/user-attachments/assets/0b0684fe-08d7-40d1-80fd-4541c93e505c)
+
+![image](https://github.com/user-attachments/assets/68294c72-1082-4038-bcc6-975550e43271)
 
 
 ## Features
