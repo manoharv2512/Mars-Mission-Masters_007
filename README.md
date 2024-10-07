@@ -66,7 +66,7 @@ https://www.youtube.com/watch?v=Hxq9C7OfwgA
 
 ![image](https://github.com/user-attachments/assets/cd77b351-ae2e-4ec4-b8ea-000b8217f7d2)
 
-![image](https://github.com/user-attachments/assets/7d8d6d0f-1d2e-44c3-b7c3-d838fba22caf)
+![image](https://github.com/user-attachments/assets/ea0a7bb4-b9bd-4dc1-8104-ef2cb84e2020)
 
 ![image](https://github.com/user-attachments/assets/95f75361-e655-4ef9-a057-72206596d4e4)
 
